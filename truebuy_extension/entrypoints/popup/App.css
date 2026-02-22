@@ -1,0 +1,19 @@
+.popup-container { width: 220px; padding: 16px; font-family: sans-serif; }
+.header { font-size: 16px; margin-bottom: 16px; font-weight: 800; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; background: #f9f9f9; }
+.row { display: flex; justify-content: space-between; align-items: center; }
+.label { font-size: 13px; font-weight: 600; }
+
+/* Switch Style */
+.switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; inset: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: #00B894; }
+input:checked + .slider:before { transform: translateX(20px); }
+
+.status-area { margin-top: 16px; text-align: center; }
+.badge { font-size: 10px; font-weight: 900; padding: 4px 10px; border-radius: 12px; }
+.badge.pro { background: #E6F7F4; color: #00B894; }
+.badge.free { background: #F3F4F6; color: #6B7280; }
+.hint { font-size: 10px; color: #888; margin-top: 8px; }
